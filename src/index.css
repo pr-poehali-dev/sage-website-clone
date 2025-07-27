@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +99,24 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .tech-gradient {
+    background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+  }
+
+  .tech-gradient-dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(0, 102, 255, 0.5);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
   }
 }
